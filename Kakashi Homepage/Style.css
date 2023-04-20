@@ -1,0 +1,114 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #c8b69a; 
+    overflow-x: none;
+}
+
+header {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  background-color: #73460E;
+}
+
+.logo-container, .navbar-links, .socials {
+  display: flex;
+}
+
+.logo-container {
+  flex: 1;
+  padding-left: 5px;
+  position: relative;
+}
+
+nav {
+  flex: 2;
+}
+
+.navbar-links {
+  justify-content: space-around;
+  list-style: none;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.navbar-linkh, .navbar-linkp, .navbar-linkb, .navbar-linka {
+  text-decoration: none;
+  color: #FAF0DE;
+}
+
+.navbar-linkp, .navbar-linkb, .navbar-linka {
+  padding-left: 55px;
+  border-left: solid 1px #FAF0DE;
+}
+
+.navbar-linkh:hover, .navbar-linkp:hover, .navbar-linkb:hover, .navbar-linka:hover {
+  color: black;
+  transition: 0.5s;
+}
+
+.socials {
+  flex: 1;
+  justify-content: flex-end;
+  margin-right: 13px;
+}
+
+.socialsl, .socialsg {
+  display: none;
+}
+
+.socials img:first-child {
+  margin-right: 13px;
+}
+
+.name {
+  color: #ffffff;
+  font-size: 60px;
+  position: relative;
+ z-index: 1;
+}
+
+.namedef {
+  padding-top: 100px;
+  text-align: center;
+}
+
+.top-circle {
+  position: absolute;
+  right: 0px;
+  opacity: 0.4;
+}
+
+.bottom-circle {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+
+
+/* Media queries */
+
+@media only screen and (max-width: 1256px) {
+  .navbar-linkp, .navbar-linkb, .navbar-linka {
+    padding-left: 55px;
+    border-left: solid 0px #FAF0DE;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .socialsl {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .socialsg {
+    display: none;
+  }
+}
